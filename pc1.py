@@ -10,6 +10,7 @@
 #sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj
 
 #this helped me figure out maketrans: http://www.tutorialspoint.com/python/string_maketrans.htm
+import webbrowser
 from string import maketrans
 
 lettersin = "abcdefghijklmnopqrstuvwxyz"
@@ -29,6 +30,5 @@ print phrase.translate(letterstran)
 #    doing it in by hand is inefficient and that's why this text is so long. 
 #    using string.maketrans() is recommended. now apply on the url
 
-url = "map"
-print url.translate(letterstran)
-# => ocr
+url = "map".translate(letterstran) #=> ocr
+webbrowser.open("http://www.pythonchallenge.com/pc/def/{0}.html".format(url))
